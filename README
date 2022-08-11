@@ -1,0 +1,16 @@
+Setup
+=====
+$ python3 -m pip install --user qmk
+$ export PATH="$PATH:$HOME/.local/bin" 
+$ qmk setup -H ~/sources/qmk_firmware
+
+Copy the keymap directories into the QMK tree.
+
+Usage
+=====
+$ qmk <command> -kb <keyboard> -km <keymap>
+
+For example:
+
+$ qmk compile -kb ymdk/yd60mq -km clamiax
+$ qmk flash -kb ymdk/yd60mq -km clamiax
